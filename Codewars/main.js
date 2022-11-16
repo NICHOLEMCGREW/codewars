@@ -273,3 +273,19 @@
 
 // const removeExclamationMarks = s => s.replace(/!/g,'')
 
+// A wolf in sheep's clothing
+
+    // function warnTheSheep(queue) {
+    //     const wolfIndex = queue.indexOf('wolf')
+    //     const sheepIndex = queue.length - wolfIndex - 1
+    //         if(wolfIndex === queue.length - 1){
+    //             return `Pls go away and stop eating my sheep`
+    //         } else {
+    //             return `Oi! Sheep number ${sheepIndex}! You are about to be eaten by a wolf!`
+    //         }
+    //     }
+    
+
+    // altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+
+    
