@@ -288,4 +288,52 @@
 
     // altERnaTIng cAsE <=> ALTerNAtiNG CaSe
 
-    
+    // String.prototype.toAlternatingCase = function (c) {
+    //     return [...this].map(
+    //         (c) => (c === c.toUpperCase() ? c.toLowerCase() : c.toUpperCase()),
+    //     ).join``;
+    //   }
+
+    // function AgencyContractor(hourlyRate, hours, taxRate){
+        //     this.hours = hours
+        //     this.taxRate = taxRate
+        //     let rate = hourlyRate
+        //     let calculateProfit = function(){
+        //         return rate * this.hours * (1 - this.taxRate)
+        //     }
+        //     this.invoiceClient = function(){
+        //         return `Your invoice total is ${rate * this.hours}`
+        //     }
+        // }
+        
+        // let leon = new AgencyContractor(250, 160, .35)
+        // console.log(leon.invoiceClient())
+
+        // Closest elevator
+
+        elevator = (left, right, call) => Math.abs(call - left) < Math.abs(call - right) ? "left" : "right"
+
+        // Sum of differences in array
+
+        function sumOfDifferences(arr) {
+            arr.sort((a,b) => b - a)
+            let sum = 0;
+            for (let i = 0; i < arr.length - 1; ++i) {
+                sum += arr[i] - arr[i + 1];
+        }
+            return sum
+        }
+
+        console.log(sumOfDifferences([1, 2, 10]))
+
+        
+        let arr = [1, 2, 10];
+
+arr.sort((a,b) => b - a);
+
+let sum = 0;
+for (let i = 0; i < arr.length - 1; ++i) {
+    sum += arr[i] - arr[i + 1];
+}
+
+console.log(sum);
