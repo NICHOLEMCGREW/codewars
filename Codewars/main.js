@@ -311,29 +311,38 @@
 
         // Closest elevator
 
-        elevator = (left, right, call) => Math.abs(call - left) < Math.abs(call - right) ? "left" : "right"
+//         elevator = (left, right, call) => Math.abs(call - left) < Math.abs(call - right) ? "left" : "right"
 
-        // Sum of differences in array
+//         // Sum of differences in array
 
-        function sumOfDifferences(arr) {
-            arr.sort((a,b) => b - a)
-            let sum = 0;
-            for (let i = 0; i < arr.length - 1; ++i) {
-                sum += arr[i] - arr[i + 1];
-        }
-            return sum
-        }
+//         function sumOfDifferences(arr) {
+//             arr.sort((a,b) => b - a)
+//             let sum = 0;
+//             for (let i = 0; i < arr.length - 1; ++i) {
+//                 sum += arr[i] - arr[i + 1];
+//         }
+//             return sum
+//         }
 
-        console.log(sumOfDifferences([1, 2, 10]))
+//         console.log(sumOfDifferences([1, 2, 10]))
 
         
-        let arr = [1, 2, 10];
+//         let arr = [1, 2, 10];
 
-arr.sort((a,b) => b - a);
+// arr.sort((a,b) => b - a);
 
-let sum = 0;
-for (let i = 0; i < arr.length - 1; ++i) {
-    sum += arr[i] - arr[i + 1];
-}
+// let sum = 0;
+// for (let i = 0; i < arr.length - 1; ++i) {
+//     sum += arr[i] - arr[i + 1];
+// }
 
-console.log(sum);
+// console.log(sum);
+
+// Vowel Count
+
+function getCount(str) {
+    const count = str.match(/[aeiou]/gi);
+    return count === null ? 0 : count.length;
+  }
+
+  console.log(getCount("abracadabra"));
