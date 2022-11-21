@@ -340,9 +340,31 @@
 
 // Vowel Count
 
-function getCount(str) {
-    const count = str.match(/[aeiou]/gi);
-    return count === null ? 0 : count.length;
+// function getCount(str) {
+//     const count = str.match(/[aeiou]/gi);
+//     return count === null ? 0 : count.length;
+//   }
+
+//   console.log(getCount("abracadabra"));
+
+const flip=(d, a)=>{
+    return d == 'R' ? a.sort((x,y) => x - y) : a.sort((x,y) => y - x)
   }
 
-  console.log(getCount("abracadabra"));
+//   Coefficients of the Quadratic Equation
+
+quadratic = (x1, x2) => [1, -(x1 + x2), x1 * x2]
+
+// Total amount of points
+
+function points(games) {
+    let total = 0;
+    games.map(game => {
+        if (game[0] === game[2]) {
+            total += 1;
+        } else if (game[0] > game[2]) {
+            total += 3;
+        }
+    });
+    return total;
+}
