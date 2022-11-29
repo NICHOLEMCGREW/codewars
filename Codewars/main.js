@@ -386,8 +386,20 @@
 
 // Merge two sorted arrays into one
 
-function mergeArrays(arr1, arr2) {
-    return Array.from(new Set(arr1.concat(arr2).sort((x,y) => x - y)))
-}
+// function mergeArrays(arr1, arr2) {
+//     return Array.from(new Set(arr1.concat(arr2).sort((x,y) => x - y)))
+// }
 
-console.log(mergeArrays([1,4,3,2], [5,6,7,8]))
+// console.log(mergeArrays([1,4,3,2], [5,6,7,8]))
+
+
+// Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string
+
+function remove(string) {
+    if(string[0] == "!"){
+        string.slice(1)
+    }
+    return string.split('!').slice().join('') + "!"
+  }
+
+  console.log(remove("!Hi!!"))
