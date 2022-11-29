@@ -347,38 +347,47 @@
 
 //   console.log(getCount("abracadabra"));
 
-const flip=(d, a)=>{
-    return d == 'R' ? a.sort((x,y) => x - y) : a.sort((x,y) => y - x)
-  }
+// const flip=(d, a)=>{
+//     return d == 'R' ? a.sort((x,y) => x - y) : a.sort((x,y) => y - x)
+//   }
 
-//   Coefficients of the Quadratic Equation
+// //   Coefficients of the Quadratic Equation
 
-quadratic = (x1, x2) => [1, -(x1 + x2), x1 * x2]
+// quadratic = (x1, x2) => [1, -(x1 + x2), x1 * x2]
 
-// Total amount of points
+// // Total amount of points
 
-function points(games) {
-    let total = 0;
-    games.map(game => {
-        if (game[0] === game[2]) {
-            total += 1;
-        } else if (game[0] > game[2]) {
-            total += 3;
-        }
-    });
-    return total;
+// function points(games) {
+//     let total = 0;
+//     games.map(game => {
+//         if (game[0] === game[2]) {
+//             total += 1;
+//         } else if (game[0] > game[2]) {
+//             total += 3;
+//         }
+//     });
+//     return total;
+// }
+
+// // Sum of positive
+
+// function positiveSum(arr) {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] > 0) {
+//             sum += arr[i]
+//         }
+//     }
+//     return sum;
+// }
+
+// console.log(positiveSum([1,-2,3,4,5]))
+
+
+// Merge two sorted arrays into one
+
+function mergeArrays(arr1, arr2) {
+    return Array.from(new Set(arr1.concat(arr2).sort((x,y) => x - y)))
 }
 
-// Sum of positive
-
-function positiveSum(arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > 0) {
-            sum += arr[i]
-        }
-    }
-    return sum;
-}
-
-console.log(positiveSum([1,-2,3,4,5]))
+console.log(mergeArrays([1,4,3,2], [5,6,7,8]))
