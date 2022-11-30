@@ -395,11 +395,16 @@
 
 // Exclamation marks series #4: Remove all exclamation marks from sentence but ensure a exclamation mark at the end of string
 
-function remove(string) {
-    if(string[0] == "!"){
-        string.slice(1)
-    }
-    return string.split('!').slice().join('') + "!"
-  }
+// function remove(string) {
+//     if(string[0] == "!"){
+//         string.slice(1)
+//     }
+//     return string.split('!').slice().join('') + "!"
+//   }
 
-  console.log(remove("!Hi!!"))
+//   console.log(remove("!Hi!!"))
+
+// CSV representation of array
+
+const toCsvText = array =>
+    array.join('\n')
