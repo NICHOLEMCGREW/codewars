@@ -588,24 +588,43 @@
 
 // Function 2 - squaring an argument
 
-function square(num) {
-  let numsquared = num ** 2
-  return numsquared;
-}
-console.log(square(2))
+// function square(num) {
+//   let numsquared = num ** 2
+//   return numsquared;
+// }
+// console.log(square(2))
 
 
-// Calculate BMI
+// // Calculate BMI
 
-function bmi(weight, height) {
-  let bmi = weight/height ** 2
-  if(bmi <= 18.5) {
-    return "Underweight";
-  } else if (bmi <= 25.0) {
-    return "Normal"
-  } else if (bmi <= 30.0) {
-    return "Overweight"
-  } else if (bmi > 30) {
-    return "Obese"
+// function bmi(weight, height) {
+//   let bmi = weight/height ** 2
+//   if(bmi <= 18.5) {
+//     return "Underweight";
+//   } else if (bmi <= 25.0) {
+//     return "Normal"
+//   } else if (bmi <= 30.0) {
+//     return "Overweight"
+//   } else if (bmi > 30) {
+//     return "Obese"
+//   }
+// }
+
+// FIXME: Get Full Name
+class Dinglemouse{
+
+  constructor( firstName, lastName ){
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  
+  getFullName(){
+    if(this.firstName == "") {
+      return this.lastName;
+    } else if(this.lastName == "") {
+      return this.firstName;
+    } else {
+      return `${this.firstName} ${this.lastName}`
+    }
   }
 }
