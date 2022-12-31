@@ -611,20 +611,28 @@
 // }
 
 // FIXME: Get Full Name
-class Dinglemouse{
+// class Dinglemouse{
 
-  constructor( firstName, lastName ){
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
+//   constructor( firstName, lastName ){
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//   }
   
-  getFullName(){
-    if(this.firstName == "") {
-      return this.lastName;
-    } else if(this.lastName == "") {
-      return this.firstName;
-    } else {
-      return `${this.firstName} ${this.lastName}`
-    }
-  }
+//   getFullName(){
+//     if(this.firstName == "") {
+//       return this.lastName;
+//     } else if(this.lastName == "") {
+//       return this.firstName;
+//     } else {
+//       return `${this.firstName} ${this.lastName}`
+//     }
+//   }
+// }
+
+// Third Angle of a Triangle
+
+function otherAngle(a, b) {
+  let c = 0;
+  return (180 - a - b);
 }
+console.log(otherAngle(30, 60))
