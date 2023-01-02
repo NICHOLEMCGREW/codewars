@@ -631,8 +631,19 @@
 
 // Third Angle of a Triangle
 
-function otherAngle(a, b) {
-  let c = 0;
-  return (180 - a - b);
+// function otherAngle(a, b) {
+//   let c = 0;
+//   return (180 - a - b);
+// }
+// console.log(otherAngle(30, 60))
+
+
+// Check your arguments
+
+function objectType(obj) { 
+  if (arguments.length < 1) {
+    return null;
+  }
+  return Object.prototype.toString.call(obj);
 }
-console.log(otherAngle(30, 60))
+
