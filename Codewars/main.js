@@ -647,3 +647,31 @@ function objectType(obj) {
   return Object.prototype.toString.call(obj);
 }
 
+// Debug the functions EASY
+
+function multi(arr) {
+ let product = 1;
+ for (let i = 0; i < arguments.length; i++) {
+  product = product * arguments[i];
+ }
+ return product;
+}
+function add(arr) {
+  return arr + arr;
+}
+function reverse(str) {
+  return str.split("").reverse().join("")
+}
+
+console.log(multi(5, 1, 5))
+console.log(add(9, 8, 5))
+console.log(reverse('hi'))
+
+
+// Debug Sum of Digits of a Number
+
+const getSumOfDigits = integer => 
+String(integer).split('').reduce((p, c) => p + Number(c), 0)
+
+console.log(getSumOfDigits(123))
+
